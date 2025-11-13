@@ -36,7 +36,7 @@ This project implements a **32-bit ALU** by designing:
 - Full adders and subtractors  
 - Shift logic  
 - A multiplexer for operation selection  
-- A scalable hierarchial ALU structure  
+- A scalable hierarchical ALU structure  
 
 The entire design was implemented and tested within **Cadence Virtuoso** using **gpdk90**.
 
@@ -59,62 +59,71 @@ The entire design was implemented and tested within **Cadence Virtuoso** using *
 ### Basic Logic Gates
 
 #### AND Gate  
-![AND Gate](images/and_gate.png)
+![AND Gate](images/AND.jpg)
 
 #### NOT Gate  
-![NOT Gate](images/not_gate.png)
+![NOT Gate](images/INV.jpg)
 
 #### OR Gate  
-![OR Gate](images/or_gate.png)
+![OR Gate](images/OR.jpg)
 
 ---
 
 ### Arithmetic Circuits
 
 #### XOR Gate  
-![XOR Gate](images/xor_gate.png)
+![XOR Gate](images/XOR.jpg)
 
 #### Full Adder  
-![Full Adder](images/full_adder.png)
+![Full Adder](images/FullAdder.jpg)
 
 #### Full Subtractor  
-![Full Subtractor](images/full_subtractor.png)
+![Full Subtractor](images/FullSub.jpg)
 
 ---
 
 ### Shift Unit
 
 #### D Flip-Flop  
-![D Flip-Flop](images/d_flipflop.png)
+![D Flip-Flop](images/D-FlipFlop.jpg)
 
 ---
 
 ### Multiplexers
 
 #### 2×1 Multiplexer  
-![2x1 MUX](images/2x1_mux.png)
+![2x1 MUX](images/2X1MUX.jpg)
 
 #### 8×1 Multiplexer  
-![8x1 MUX](images/8x1_mux.png)
+![8x1 MUX](images/8X1MUX.jpg)
 
 ---
 
 ### Hierarchical ALU Design
 
 #### 1-Bit ALU  
-![1-bit ALU](images/1bit_alu.png)
+![1-bit ALU](images/1-bit,jpg)
 
 #### 2-Bit ALU  
-![2-bit ALU](images/2bit_alu.png)
+![2-bit ALU](images/2-bit.jpg)
 
 #### 4-Bit ALU  
-![4-bit ALU](images/4bit_alu.png)
+![4-bit ALU](images/4-bit.jpg)
 
 #### 16-Bit ALU  
-![16-bit ALU](images/16bit_alu.png)
+![16-bit ALU](images/16-bit.jpg)
 
 #### 32-Bit ALU (Final)  
-![32-bit ALU](images/32bit_alu.png)
+![32-bit ALU](images/32-bit.jpg)
+
+---
+
+## 🔷 32-Bit Symbol View
+
+A clean symbol view was created to integrate the ALU at higher hierarchy levels.
+
+### 32-Bit ALU Symbol  
+![32bit Symbol](images/32-bit-symbol.jpg)
 
 ---
 
@@ -123,11 +132,43 @@ The entire design was implemented and tested within **Cadence Virtuoso** using *
 - All arithmetic, logical, and shift operations were validated through transient simulations.  
 - The 8×1 multiplexer reliably handled operation selection.  
 - Scaling from 1-bit to 32-bit maintained correctness and stable carry propagation.  
-- Output waveforms matched expected behaviour.
+- Output waveforms matched the expected behaviour.
+
+---
+
+## ✔️ Layout Verification
+
+### 🟩 DRC Results (Design Rule Check)
+
+- Technology: **gpdk90 90 nm**
+- All layout rules satisfied  
+- No spacing, width, enclosure, or density violations  
+
+**DRC Status:**  
+-Total Errors: 0
+-Status: PASS
+
+![DRC Result](images/DRC.jpg)
+
+---
+
+### 🟦 LVS Results (Layout vs. Schematic)
+
+- Layout matches schematic  
+- No missing devices  
+- No shorts or opens  
+- No parameter mismatches  
+
+**LVS Status:**  
+-Netlist Comparison: MATCH
+-Device Count: MATCH
+-Status: PASS
+
+![LVS Result](images/LVS.jpg)
 
 ---
 
 ## 📚 References
 
-1. Manur, M. S. *Design of 32 bit Low Power ALU Using Cadence.* GIJET, 2017.  
+1. Manur, M. S. *Design of 32-bit Low Power ALU Using Cadence.* GIJET, 2017.  
 2. Shohail, K. I., et al. *Design Steps Simulation and Analysis of a 1-bit ALU in Cadence at 90 nm CMOS Node.* IOSR-JVSP, 2023.
