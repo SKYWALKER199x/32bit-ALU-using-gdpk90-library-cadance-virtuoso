@@ -102,7 +102,7 @@ The entire design was implemented and tested within **Cadence Virtuoso** using *
 ### Hierarchical ALU Design
 
 #### 1-Bit ALU  
-![1-bit ALU](images/1-bit,jpg)
+![1-bit ALU](images/1-bit.jpg)
 
 #### 2-Bit ALU  
 ![2-bit ALU](images/2-bit.jpg)
@@ -123,7 +123,7 @@ The entire design was implemented and tested within **Cadence Virtuoso** using *
 A clean symbol view was created to integrate the ALU at higher hierarchy levels.
 
 ### 32-Bit ALU Symbol  
-![32bit Symbol](images/32-bit-symbol.jpg)
+![32bit Symbol](images/32-bit-symbol.png)
 
 ---
 
@@ -148,7 +148,7 @@ A clean symbol view was created to integrate the ALU at higher hierarchy levels.
 -Total Errors: 0
 -Status: PASS
 
-![DRC Result](images/DRC.jpg)
+![DRC Result](images/DRC.png)
 
 ---
 
@@ -164,7 +164,7 @@ A clean symbol view was created to integrate the ALU at higher hierarchy levels.
 -Device Count: MATCH
 -Status: PASS
 
-![LVS Result](images/LVS.jpg)
+![LVS Result](images/LVS.png)
 
 ---
 
